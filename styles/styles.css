@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: gray;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  height: 400px;
+  width: 800px;
+
+  /* border: 1px solid #000; */
+
+  background-image: url("/zeihlund-O85d3uZ_Ul0-unsplash.jpg");
+  background-size: contain;
+  background-position: center;
+
+  position: relative;
+
+  border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px 0 0 10px;
+}
+
+.content h2 {
+  position: relative;
+  left: 9rem;
+
+  font-size: 6rem;
+
+  display: inline-block;
+
+  color: #fff;
+}
+.content h2 span {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  background-image: url(/zeihlund-O85d3uZ_Ul0-unsplash.jpg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
